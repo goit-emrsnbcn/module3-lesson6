@@ -1,0 +1,44 @@
+/*
+by default display flex gives a flex-direction: row
+justify-content manipulates the X axis
+align-items manipulates the Y axis
+
+flex-direction: column
+justfify-content manipulates the Y axis
+align-items manipulates the X axis
+*/
+
+.flex-container {
+    border: 5px solid black;
+    display: flex;
+}
+
+/*
+flex-grow - the higher the value the faster it occupies the space
+flex-shrink the higher the value the faster it shrinks
+flex-basis - is the base width of your element
+*/
+
+.first {
+    background-color: blue;
+    /* flex: 1 1 0 */
+    /* flex: grow shrink basis */
+    /* flex: 3; */
+    /* flex-grow: 2; */
+    flex-shrink: 1;
+    flex-basis: 200px;
+}
+
+.second {
+    background-color: red;
+    /* flex-grow: 1; */
+    /* flex: 2; */
+    flex-shrink: 10;
+    flex-basis: 200px;
+}
+
+.third {
+    background-color: green;
+    /* flex: 1; */
+    /* flex-basis: 20%; */
+}
